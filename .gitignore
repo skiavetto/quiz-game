@@ -1,0 +1,8 @@
+img_quiz/*
+!img_quiz/.gitkeep
+
+profile_img/*
+!profile_img/.gitkeep
+
+assets/*
+!assets/.gitkeep

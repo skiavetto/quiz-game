@@ -1,0 +1,174 @@
+body {
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(240,240,240,1) 10%, rgba(233,237,255,1) 60%, rgba(240,232,255,1) 100%);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.concradulations {
+    font-family: "Parkinsans";
+    font-size:2.25vw;
+    background: linear-gradient(90deg, rgba(81,55,106,1) 0%, rgba(113,42,86,1) 55%, rgba(172,37,37,1) 100%);
+    background-clip:text;
+    color: transparent; 
+    margin-top: 7.5%;
+}
+
+.score_container {
+    width:50%;
+    background-color: #f0f0f0;
+    margin-top: 3.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2.5em 1.5em;
+    border-radius: 1em;
+    border:1px solid #ccc;
+}
+
+.score_container p {
+    font-size: 1.25vw;
+    font-weight: 400;
+    color: #777;
+}
+
+.user_success {
+    font-size: 2vw;
+    color:#857ca6; 
+    font-weight: 600;
+}
+
+.score_container .score_txt {
+    font-size: 1.25vw;
+    font-weight: 400;
+    margin-top: 1.5em;
+}
+
+.score-feedback {
+    font-family: "Parkinsans";
+    font-size: 4vw;
+    font-weight: 800;
+    background: linear-gradient(30deg, rgba(214,129,25,1) 0%, rgba(255,194,35,1) 40%, rgba(231,179,57,1) 70%, rgba(255,232,121,1) 100%);
+    background-clip:text;
+    color: transparent;
+    padding:0.75em;
+    display: block;
+}
+
+.noScore-feedback {
+    font-size: 1.25vw;
+    margin-top: 0.75em;
+    color:#703b39;
+    background-color: #f7d8d7;
+    padding:0.5em;
+    text-align: justify;
+    display: block;
+    border-radius: 0.25em;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+.home-btn, .createQuiz-btn, .share-btn {
+    width: 30%;
+    font-size: 1.25vw;
+    text-decoration: none;
+    padding:0.5em 0.25em;
+    border-radius: 0.25em;
+    font-weight: 600;
+}
+
+.home-btn, .share-btn {
+    border:1px solid #675bcf;
+    color: #675bcf;
+}
+
+.home-btn:hover , .share-btn:hover {
+    background-color: #9389e8 ;
+    color: #f0f0f0;
+    transition: 0.1s;
+}
+
+.createQuiz-btn {
+    background: #675bcf;
+    color: #f0f0f0;
+}
+
+.createQuiz-btn:hover {
+    background: #9389e8;
+    transition: 0.1s;
+}
+
+
+
+
+
+@media (max-width:580px){    
+    
+    .concradulations {
+        width: 100%;
+        padding:0 5%;
+        font-size:5.25vw;
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .score_container {
+        width:90%;
+        margin-top: 10%;
+        padding:2.5em 1.5em;
+        border-radius: 1em;
+    }
+    
+    .score_container p {
+        font-size: 4.5vw;
+    }
+    
+    .user_success {
+        font-size: 5vw;
+    }
+    
+    .score_container .score_txt {
+        font-size: 4.5vw;
+        margin-top: 1.5em;
+    }
+    
+    .score-feedback {
+        font-size: 10vw;
+        font-weight: 800;
+        padding:0.75em;
+    }
+    
+    .noScore-feedback {
+        font-size: 4vw;
+        margin-top: 1em;
+    }
+    
+    .btnContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:90%;
+        margin-top: 15%; 
+        row-gap: 0em;
+    }
+    
+    .home-btn, .createQuiz-btn, .share-btn {
+        width: 100%;
+        font-size: 4vw;
+        border-radius: 10em;
+    }
+}

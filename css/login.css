@@ -1,0 +1,152 @@
+body {
+    background: rgb(220,212,230);
+    background: linear-gradient(30deg, #dcd4e6 45%, rgba(224,187,219,1) 70%, rgba(254,211,187,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    background-color: #f0f0f0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    align-items: center;
+    padding:3.5% 5% 1em 5%;
+    border-radius: 1em;
+}
+
+h1{
+    display: block;
+    width: 100%;
+    font-size: 2.15vw;
+    font-family: "Parkinsans";
+    color:#6357c9; 
+    text-align: left;
+}
+
+.container form {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:2% 0;
+    margin-top: 1.5em;
+}
+
+.container form label {
+    font-size: 1.2vw;
+    color:#6e6978;
+    padding:0.75em 0.25em;
+}
+
+.container form input {
+    background-color: #f0f0f0;
+    width:100%;
+    border-radius: 10em;
+    border:1px solid #6e6978;
+    padding:0.65em;
+    font-size: 1.15vw;
+    color: #888;
+}
+
+.container form input:focus {
+    border: 1px solid #6357c9;
+    background-color: #e7e6f0;
+    outline:none;
+    transition: 0.1s;
+}
+
+.container .login-btn {
+    width:100%;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background: rgb(99,87,201);
+    background: linear-gradient(33deg, rgba(99,87,201,1) 0%, rgba(133,121,237,1) 60%, rgba(210,178,255,1) 100%);
+    color:#f0f0f0;
+    padding:3%;
+    border:none;
+    margin-top: 2em;
+    cursor:pointer;
+}
+
+.container .login-btn:hover {
+    background: rgb(99,87,201);
+    background: linear-gradient(33deg, rgba(99,87,201,1) 0%, rgba(133,121,237,1) 40%, rgba(210,178,255,1) 70%, rgba(255,214,244,1) 100%);
+}
+
+
+.forgetPass-link {
+    padding:2em 0 0.75em 0;
+    font-size: 1.25vw;
+    color:#6e6978;
+    text-align: center;
+}
+
+.register-link {
+    font-size: 1.25vw;
+    color:#e08026;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width:580px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 90%;
+        padding:15% 5%;
+        border-radius: 0.5em;
+    }
+
+    h1{
+        font-size: 7vw;
+        text-align: center;
+        padding:5% 0;
+    }
+
+    .container form {
+        padding:5%;
+    }
+    
+    .container form label {
+        font-size: 4.5vw;
+        padding:0.75em 0.5em;
+    }
+    
+    .container form input {
+        width:100%;
+        padding:0.75em;
+        font-size: 4.25vw;
+    }
+
+    .container .login-btn {
+        font-size: 5vw;
+        font-weight: 600;
+        padding:5% 2.5%;
+        margin-top: 1.5em;
+    }
+    
+    .forgetPass-link {
+        padding:2em 0 0.75em 0;
+        font-size: 4.25vw;
+    }
+    
+    .register-link {
+        font-size: 4.25vw;
+    }
+
+
+}

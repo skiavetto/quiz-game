@@ -1,0 +1,310 @@
+*{
+    font-family: "Cabin";
+}
+
+body {
+    background: rgb(220,212,230);
+    background: linear-gradient(30deg, rgba(220,212,230,1) 45%, rgba(224,187,219,1) 70%, rgba(254,211,187,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-color: #f0f0f0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    align-items: center;
+    padding:3.5% 5% 1em 5%;
+    border-radius: 1em;
+}
+
+.header {
+    text-align: left;
+    width: 100%;
+    padding-bottom:1em;
+}
+
+.quizTitle{
+    font-size: 5vw;
+    font-family: "Parkinsans";
+    color:#b3acf2; 
+    font-weight: 600;
+}
+
+.header .title {
+    font-size: 2.15vw;
+    font-family: "Parkinsans";
+    color:#6357c9; 
+    font-weight: 600;
+}
+
+.header .titleQuestion{
+    font-size: 2.5vw;
+    font-family: "Parkinsans";
+    color:#b0abdb; 
+    font-weight: 600;
+}
+
+.container form {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:2% 0;
+}
+
+.headerQuizContainer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #c2bdc9;
+    padding:0 0 5% 0;
+}
+
+.container form label {
+    font-size: 1.2vw;
+    color:#6e6978;
+    padding:0.75em 0.25em;
+}
+
+.container form input {
+    background-color: #f0f0f0;
+    width:100%;
+    border-radius: 10em;
+    border:1px solid #6e6978;
+    padding:0.65em;
+    font-size: 1.15vw;
+    color: #888;
+}
+
+.container form input:focus {
+    border: 1px solid #6357c9;
+    background-color: #e7e6f0;
+    outline:none;
+    transition: 0.1s;
+}
+
+.container form input[type=file]{
+    display:none;
+}
+
+.container form .imgQuestion-submit {
+    padding:0.5em 5%;
+    font-size:1.2vw;
+    background-color: #dbd1f0;
+    border:1px solid #dbd1f0;
+    color:#4e449c;
+    margin-top: 0.5em;
+    border-radius: 10em;
+    width:fit-content;
+    cursor: pointer;
+}
+
+.container form .imgQuestion-submit:hover {
+    border:1px solid #6357c9;
+    background-color: #f0f0f0;
+    transition: 0.1s;
+}
+
+.label-description {
+    font-size: 1vw;
+    padding:0.5em 0.25em;
+    font-weight: 400;
+    color: #9b94a8;
+}
+
+.container form table {
+    width:100%;
+    margin-top:5%;
+}
+
+.container form thead td{
+    color: #6e6978;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.container form td {
+    font-size: 1.2vw;
+    color:#6e6978;
+    padding:0.75em 0;
+}
+
+.td-label {
+    width: 100%;
+    padding:0;
+}
+
+.container form .td_alternative {
+    width:85%;
+}
+
+.container form .td_value {
+    width:15%;
+    text-align: center;
+}
+
+.container form .alternativeInput {
+    width:90%;
+    border-radius: 0.5em;
+}
+
+.container form .btnContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15% 2.5% 5% 2.5%;
+}
+
+.finishBtn{
+    border:1px solid #e88335; 
+    color: #e88335;
+    width:40%;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding:2%;
+    cursor:pointer;
+    border-radius: 0.5em;
+}
+
+.finishBtn:hover {
+    background: rgb(232,131,53);
+    background: linear-gradient(90deg, rgba(232,131,53,1) 0%, rgba(255,155,200,1) 100%);
+    transition: 0.1s ease-in;
+    color:#f0f0f0;
+}
+
+.nextBtn{
+    background: rgb(99,87,201);
+    background: linear-gradient(33deg, rgba(99,87,201,1) 0%, rgba(133,121,237,1) 60%, rgba(210,178,255,1) 100%);
+    color:#f0f0f0;
+    border: none;
+    width:40%;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding:2%;
+    cursor:pointer;
+    border-radius: 0.5em;
+}
+
+.container form .btnContainer .nextBtn:hover{
+    background: rgb(99,87,201);
+    background: linear-gradient(33deg, rgba(99,87,201,1) 0%, rgba(133,121,237,1) 40%, rgba(210,178,255,1) 70%, rgba(255,214,244,1) 100%);
+}
+
+
+
+
+
+@media (max-width:580px){
+
+    .container {
+        width: 90%;
+        padding:7.5% 5%;
+        border-radius: 0.5em;
+    }
+    
+    .header .title {
+        font-size: 6vw;
+        text-align: center;
+        padding:0;
+    }
+    
+    .header .titleQuestion{
+        font-size: 5.25vw;
+        text-align: center;
+    }
+    
+    .container form {
+        padding:2% 0;
+    }
+    
+    .headerQuizContainer {
+        padding:0 0 5% 0;
+    }
+    
+    .container form label {
+        font-size: 4.5vw;
+        padding:0.75em 0.5em;
+    }
+    
+    .container form input {
+        width:100%;
+        padding:0.75em;
+        font-size: 4.25vw;
+    }
+    
+    .container form .imgQuestion-submit {
+        width: 100%;
+        padding:0.5em 5%;
+        font-size:4.25vw;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .label-description {
+        font-size: 3.5vw;
+        padding:0.75em;
+        font-weight: 400;
+        color: #868091;
+        background: #f0e4c7;
+        margin-top: 1em;
+        border-radius: 0.5em;
+    }
+    
+    .container form table {
+        width:100%;
+        margin-top:7.5%;
+    }
+    
+    .container form thead td{
+        color: #6e6978;
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+    
+    .container form td {
+        font-size: 4.5vw;
+        color:#6e6978;
+        padding:0.75em 0;
+    }
+    
+    .description_table {
+        display: flex;
+        width: 100%;
+        height:fit-content;
+        margin-top: 1em;
+    }
+    
+    .container form .td_alternative {
+        width:85%;
+    }
+    
+    .container form .td_value {
+        width:15%;
+        text-align: center;
+    }
+    
+    .container form .alternativeInput {
+        width:80%;
+        border-radius: 0.5em;
+    }
+    
+    .container form .btnContainer {
+        flex-direction:column;
+        row-gap: 1em;
+        padding: 15% 2.5% 5% 2.5%;
+    }
+    
+    .container form .btnContainer button{
+        width:100%;
+        font-size: 4vw;
+        padding:0.5em;
+    }
+}
